@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --plain: #ffffff;
+    --main-color: #000000;
+    --touch-color: #1b1b1b;
+    --touch-color2: #5e81f4;
+    --orange-gradient : linear-gradient(124deg, rgba(232, 252, 33, 0.46) 0%, rgba(232, 252, 33, 0.46) 14.286%,rgba(196, 218, 49, 0.46) 14.286%, rgba(196, 218, 49, 0.46) 28.572%,rgba(161, 185, 64, 0.46) 28.572%, rgba(161, 185, 64, 0.46) 42.858%,rgba(125, 151, 80, 0.46) 42.858%, rgba(125, 151, 80, 0.46) 57.144%,rgba(89, 117, 96, 0.46) 57.144%, rgba(89, 117, 96, 0.46) 71.43%,rgba(54, 84, 111, 0.46) 71.43%, rgba(54, 84, 111, 0.46) 85.716%,rgba(18, 50, 127, 0.46) 85.716%, rgba(18, 50, 127, 0.46) 100.002%),linear-gradient(316deg, rgb(248, 151, 43) 0%, rgb(248, 151, 43) 14.286%,rgb(246, 132, 46) 14.286%, rgb(246, 132, 46) 28.572%,rgb(243, 113, 49) 28.572%, rgb(243, 113, 49) 42.858%,rgb(241, 94, 52) 42.858%, rgb(241, 94, 52) 57.144%,rgb(239, 75, 55) 57.144%, rgb(239, 75, 55) 71.43%,rgb(236, 56, 58) 71.43%, rgb(236, 56, 58) 85.716%,rgb(234, 37, 61) 85.716%, rgb(234, 37, 61) 100.002%);
+    --pink-gradient: linear-gradient(134deg, rgba(110, 49, 41, 0.5) 0%, rgba(110, 49, 41, 0.5) 14.286%,rgba(134, 48, 65, 0.5) 14.286%, rgba(134, 48, 65, 0.5) 28.572%,rgba(157, 46, 89, 0.5) 28.572%, rgba(157, 46, 89, 0.5) 42.858%,rgba(181, 45, 113, 0.5) 42.858%, rgba(181, 45, 113, 0.5) 57.144%,rgba(204, 43, 136, 0.5) 57.144%, rgba(204, 43, 136, 0.5) 71.43%,rgba(228, 42, 160, 0.5) 71.43%, rgba(228, 42, 160, 0.5) 85.716%,rgba(251, 40, 184, 0.5) 85.716%, rgba(251, 40, 184, 0.5) 100.002%),linear-gradient(122deg, rgb(223, 89, 139) 0%, rgb(223, 89, 139) 14.286%,rgb(195, 88, 127) 14.286%, rgb(195, 88, 127) 28.572%,rgb(167, 87, 116) 28.572%, rgb(167, 87, 116) 42.858%,rgb(140, 87, 104) 42.858%, rgb(140, 87, 104) 57.144%,rgb(112, 86, 92) 57.144%, rgb(112, 86, 92) 71.43%,rgb(84, 85, 81) 71.43%, rgb(84, 85, 81) 85.716%,rgb(56, 84, 69) 85.716%, rgb(56, 84, 69) 100.002%);
+    --blue-gradient: linear-gradient(112deg, rgba(177, 133, 231, 0.46) 0%, rgba(177, 133, 231, 0.46) 14.286%,rgba(183, 112, 233, 0.46) 14.286%, rgba(183, 112, 233, 0.46) 28.572%,rgba(188, 90, 234, 0.46) 28.572%, rgba(188, 90, 234, 0.46) 42.858%,rgba(194, 69, 236, 0.46) 42.858%, rgba(194, 69, 236, 0.46) 57.144%,rgba(199, 48, 238, 0.46) 57.144%, rgba(199, 48, 238, 0.46) 71.43%,rgba(205, 26, 239, 0.46) 71.43%, rgba(205, 26, 239, 0.46) 85.716%,rgba(210, 5, 241, 0.46) 85.716%, rgba(210, 5, 241, 0.46) 100.002%),linear-gradient(157deg, rgb(73, 186, 245) 0%, rgb(73, 186, 245) 14.286%,rgb(64, 170, 226) 14.286%, rgb(64, 170, 226) 28.572%,rgb(55, 154, 206) 28.572%, rgb(55, 154, 206) 42.858%,rgb(46, 138, 187) 42.858%, rgb(46, 138, 187) 57.144%,rgb(37, 121, 168) 57.144%, rgb(37, 121, 168) 71.43%,rgb(28, 105, 148) 71.43%, rgb(28, 105, 148) 85.716%,rgb(19, 89, 129) 85.716%, rgb(19, 89, 129) 100.002%);
+    --green-gradient: linear-gradient(127deg, rgba(153, 255, 88, 0.46) 0%, rgba(153, 255, 88, 0.46) 14.286%,rgba(134, 245, 84, 0.46) 14.286%, rgba(134, 245, 84, 0.46) 28.572%,rgba(114, 236, 80, 0.46) 28.572%, rgba(114, 236, 80, 0.46) 42.858%,rgba(95, 226, 76, 0.46) 42.858%, rgba(95, 226, 76, 0.46) 57.144%,rgba(76, 216, 72, 0.46) 57.144%, rgba(76, 216, 72, 0.46) 71.43%,rgba(56, 207, 68, 0.46) 71.43%, rgba(56, 207, 68, 0.46) 85.716%,rgba(37, 197, 64, 0.46) 85.716%, rgba(37, 197, 64, 0.46) 100.002%),linear-gradient(285deg, rgb(116, 183, 117) 0%, rgb(116, 183, 117) 14.286%,rgb(113, 173, 114) 14.286%, rgb(113, 173, 114) 28.572%,rgb(110, 163, 110) 28.572%, rgb(110, 163, 110) 42.858%,rgb(107, 154, 107) 42.858%, rgb(107, 154, 107) 57.144%,rgb(104, 144, 103) 57.144%, rgb(104, 144, 103) 71.43%,rgb(101, 134, 100) 71.43%, rgb(101, 134, 100) 85.716%,rgb(98, 124, 96) 85.716%, rgb(98, 124, 96) 100.002%);
+    --purple-gradient: linear-gradient(282deg, rgba(100, 58, 138, 0.5) 0%, rgba(100, 58, 138, 0.5) 14.286%,rgba(125, 75, 135, 0.5) 14.286%, rgba(125, 75, 135, 0.5) 28.572%,rgba(150, 92, 132, 0.5) 28.572%, rgba(150, 92, 132, 0.5) 42.858%,rgba(176, 109, 129, 0.5) 42.858%, rgba(176, 109, 129, 0.5) 57.144%,rgba(201, 126, 125, 0.5) 57.144%, rgba(201, 126, 125, 0.5) 71.43%,rgba(226, 143, 122, 0.5) 71.43%, rgba(226, 143, 122, 0.5) 85.716%,rgba(251, 160, 119, 0.5) 85.716%, rgba(251, 160, 119, 0.5) 100.002%),linear-gradient(247deg, rgb(86, 8, 174) 0%, rgb(86, 8, 174) 14.286%,rgb(101, 26, 154) 14.286%, rgb(101, 26, 154) 28.572%,rgb(117, 43, 135) 28.572%, rgb(117, 43, 135) 42.858%,rgb(132, 61, 115) 42.858%, rgb(132, 61, 115) 57.144%,rgb(147, 79, 95) 57.144%, rgb(147, 79, 95) 71.43%,rgb(163, 96, 76) 71.43%, rgb(163, 96, 76) 85.716%,rgb(178, 114, 56) 85.716%, rgb(178, 114, 56) 100.002%);
+    --grey-gradient: linear-gradient(97deg, rgba(46, 46, 46, 0.46) 0%, rgba(46, 46, 46, 0.46) 12.5%,rgba(74, 74, 74, 0.46) 12.5%, rgba(74, 74, 74, 0.46) 25%,rgba(103, 103, 103, 0.46) 25%, rgba(103, 103, 103, 0.46) 37.5%,rgba(131, 131, 131, 0.46) 37.5%, rgba(131, 131, 131, 0.46) 50%,rgba(159, 159, 159, 0.46) 50%, rgba(159, 159, 159, 0.46) 62.5%,rgba(187, 187, 187, 0.46) 62.5%, rgba(187, 187, 187, 0.46) 75%,rgba(216, 216, 216, 0.46) 75%, rgba(216, 216, 216, 0.46) 87.5%,rgba(244, 244, 244, 0.46) 87.5%, rgba(244, 244, 244, 0.46) 100%),linear-gradient(82deg, rgb(244, 244, 244) 0%, rgb(244, 244, 244) 12.5%,rgb(224, 224, 224) 12.5%, rgb(224, 224, 224) 25%,rgb(204, 204, 204) 25%, rgb(204, 204, 204) 37.5%,rgb(184, 184, 184) 37.5%, rgb(184, 184, 184) 50%,rgb(164, 164, 164) 50%, rgb(164, 164, 164) 62.5%,rgb(144, 144, 144) 62.5%, rgb(144, 144, 144) 75%,rgb(124, 124, 124) 75%, rgb(124, 124, 124) 87.5%,rgb(104, 104, 104) 87.5%, rgb(104, 104, 104) 100%);
+    /* --white-gradient: linear-gradient(193deg, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.5) 12.5%,rgba(46, 46, 46, 0.5) 12.5%, rgba(46, 46, 46, 0.5) 25%,rgba(73, 73, 73, 0.5) 25%, rgba(73, 73, 73, 0.5) 37.5%,rgba(99, 99, 99, 0.5) 37.5%, rgba(99, 99, 99, 0.5) 50%,rgba(125, 125, 125, 0.5) 50%, rgba(125, 125, 125, 0.5) 62.5%,rgba(151, 151, 151, 0.5) 62.5%, rgba(151, 151, 151, 0.5) 75%,rgba(178, 178, 178, 0.5) 75%, rgba(178, 178, 178, 0.5) 87.5%,rgba(204, 204, 204, 0.5) 87.5%, rgba(204, 204, 204, 0.5) 100%),linear-gradient(85deg, rgb(106, 106, 106) 0%, rgb(106, 106, 106) 12.5%,rgb(96, 96, 96) 12.5%, rgb(96, 96, 96) 25%,rgb(87, 87, 87) 25%, rgb(87, 87, 87) 37.5%,rgb(77, 77, 77) 37.5%, rgb(77, 77, 77) 50%,rgb(67, 67, 67) 50%, rgb(67, 67, 67) 62.5%,rgb(57, 57, 57) 62.5%, rgb(57, 57, 57) 75%,rgb(48, 48, 48) 75%, rgb(48, 48, 48) 87.5%,rgb(38, 38, 38) 87.5%, rgb(38, 38, 38) 100%); */
+}
+
+body {
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.clock {
+    width: 23rem;
+    height: 23rem;
+    background: var(--touch-color);
+    /* opacity: 0.9; */
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow:  0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.clock-container {
+    position: relative;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.clock-frame {
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    align-self: center;
+    position: absolute;
+    background: var(--blue-gradient);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.hour {
+    color: var(--touch-color2);
+    margin: auto 0;
+    /* border: 1px solid orange; */
+    font-size: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+    -ms-transition: ease 1s;
+    -o-transition: ease 1s;
+}
+
+.minute-container {
+    position: absolute;
+    /*border: 1px solid darkkhaki;
+    */width: inherit;
+    height: inherit;
+    transition: linear 0.6s;
+    -webkit-transition: linear 0.6s;
+    -moz-transition: linear 0.6s;
+    -ms-transition: linear 0.6s;
+    -o-transition: linear 0.6s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.minute {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    background-color: var(--touch-color2);
+    border-radius: 50%;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear 0.6s;
+    -webkit-transition: linear 0.6s;
+    -moz-transition: linear 0.6s;
+    -ms-transition: linear 0.6s;
+    -o-transition: linear 0.6s;
+}
+
+.minute p {
+    color: var(--touch-color);
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.second-container {
+    position: absolute;
+    /*border: 1px solid rgb(189, 107, 107);
+    */width: inherit;
+    height: inherit;
+    /* transition: linear 1s;
+    -webkit-transition: linear 1s;
+    -moz-transition: linear 1s;
+    -ms-transition: linear 1s;
+    -o-transition: linear 1s;
+    */
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.second {
+    width: 20px;
+    height: 20px;
+    margin: -10px auto;
+    background-color: var(--touch-color);
+    border: 1px solid var(--touch-color2);
+    border-radius: 50%;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+}
+
+.color-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* choose color button */
+.choose-color {
+    align-self: center;
+    padding: 15px 35px;
+    background: var(--blue-gradient);
+    color: var(--plain);
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow:  0px 3px 2px rgba(92, 92, 92, 0.1);
+}
+
+.choose-color:hover {
+    opacity: 0.8;
+}
+
+/* select color panel */
+.pick-color {
+    background-color: rgb(53, 53, 53);
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  0px 5px 50px rgba(0, 0, 0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+    -ms-transition: ease 1s;
+    -o-transition: ease 1s;
+    align-self: center;
+    position: absolute;
+    bottom: 70px;
+    z-index: 10;
+    display: none;
+    justify-content: space-evenly;
+}
+
+/* set of available colors */
+.colors {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: inset 0 0 0 5px white;
+    transition: ease 0.2s;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -ms-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+}
+
+.colors:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.colors:nth-child(1) {
+    background-color: #32d656;
+    border: 3px solid #32d656;
+}
+.colors:nth-child(2) {
+    background-color: #e89446;
+    border: 3px solid #e89446;
+    margin-left: 10px;
+}
+.colors:nth-child(3) {
+    background-color: #ca5386;
+    border: 3px solid #ca5386;
+    margin-left: 10px;
+}
+.colors:nth-child(4) {
+    background-color: #ce8b53;
+    border: 3px solid #ce8b53;
+    margin-left: 10px;
+}
+.colors:nth-child(5) {
+    background-color: #c0bdbd;
+    border: 3px solid #c0bdbd;
+    margin-left: 10px;
+}
+.colors:nth-child(6) {
+    background-color: #5e81f4;
+    border: 3px solid #5e81f4;
+    margin-left: 10px;
+}
+
+.input-selection {
+    border-top: 2px solid rgb(237, 237, 237);
+    padding: 10px;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.dim {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+    -webkit-animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { transform: scale(0); -webkit-transform: scale(0); -moz-transform: scale(0); -ms-transform: scale(0); -o-transform: scale(0); 
+        opacity: 0;
+    }
+    to {
+        transition: scale(1); -webkit-transition: scale(1); -moz-transition: scale(1); -ms-transition: scale(1); -o-transition: scale(1);
+        opacity: 1;
+        display: block;
+    }
+}
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 550px){
+
+    body {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .container {
+        margin: 20px auto;
+    }
+
+    .clock-container {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+}
+
+    .change-color {
+        margin-top: -30px;
+    }
+
+    .pick-color {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        bottom: 40px;
+    }
+}
