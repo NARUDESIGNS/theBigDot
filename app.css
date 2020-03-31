@@ -348,3 +348,14 @@ label {
         bottom: 40px;
     }
 }
+
+@media only screen and (max-height: 700px){
+    .container {
+        transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+        -moz-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+        -o-transform: scale(0.75);
+        margin-top: -50px;
+    }
+}
