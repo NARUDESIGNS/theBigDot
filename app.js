@@ -12,6 +12,8 @@ const dim = document.getElementById('dim');
 const frame = document.getElementById('use-frame');
 const colors = document.getElementsByClassName('colors');
 
+//document.documentElement.style.setProperty('--touch-color', 'lime');
+
 //CLOCK LOGIC
 setInterval( () => {
     let time = new Date();
@@ -19,9 +21,11 @@ setInterval( () => {
     let min = time.getMinutes();
     let sec = time.getSeconds();
 
+    // rotation calculation variables
     let degSecs = 6 * sec;
     let degMins = 6 * min;
 
+    // rotation calculation
     secondContainer.style.transform = `rotate(${degSecs}deg)`;
     minuteContainer.style.transform = `rotate(${degMins}deg)`;
     minute.style.transform = `rotate(${-degMins}deg)`;
@@ -42,24 +46,15 @@ chooseColor.addEventListener('click', () => {
     })
 })
 
-//change color function
-function changeColor(mainColor, fillColor){
-    clockFrame.style.background = mainColor;
-    minute.style.backgroundColor = fillColor;
-    second.style.borderColor = fillColor;
-    hour.style.color = fillColor;
-    chooseColor.style.background = mainColor;
-}
-
 //colors
 for(let color of colors){
     color.addEventListener('click', () => {
-        if(color.id == 'green') changeColor('var(--green-gradient)', '#32d656');
-        if(color.id == 'orange') changeColor('var(--orange-gradient)', '#e89446');
-        if(color.id == 'pink') changeColor('var(--pink-gradient)', '#ca5386');
-        if(color.id == 'purple') changeColor('var(--purple-gradient)', '#ce8b53');
-        if(color.id == 'grey') changeColor('var(--grey-gradient)', '#c0bdbd');
-        if(color.id == 'blue') changeColor('var(--blue-gradient)', '#5e81f4');
+        if(color.id == 'green') document.documentElement.style.setProperty('--color-fill', '#4aaf6c');
+        if(color.id == 'orange') document.documentElement.style.setProperty('--color-fill', '#f0b863');
+        if(color.id == 'pink') document.documentElement.style.setProperty('--color-fill', '#ad334e');
+        if(color.id == 'brown') document.documentElement.style.setProperty('--color-fill', '#9b7611');
+        if(color.id == 'grey') document.documentElement.style.setProperty('--color-fill', '#7a7a7a');
+        if(color.id == 'blue') document.documentElement.style.setProperty('--color-fill', '#4d4666');
         dim.style.display = "none";
         pickColor.style.display = "none";
     })

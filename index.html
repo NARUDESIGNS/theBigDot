@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Big Dot</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <!-- Clock -->
         <div class="clock-container">
             <section class="clock" id="clock">
-                <p class="hour" id="hour">5</p>
+                <p class="hour" id="hour">.</p>
                 <div class="minute-container" id="minute-container">
                     <section class="minute" id="minute">
-                        <p>30</p>
+                        <p>.</p>
                         <div class="second-container" id="second-container">
                             <div class="second" id="second"></div>
                         </div>
@@ -23,13 +24,14 @@
             <div class="clock-frame" id="clock-frame"></div>            
         </div>
 
+        <!-- Colors Panel -->
         <section class="color-container">
             <button class="choose-color" id="choose-color">Choose Color</button>
             <div class="fade-in pick-color" id="pick-color">
                     <section class="colors" id="green"></section>
                     <section class="colors" id="orange"></section>
                     <section class="colors" id="pink"></section>
-                    <section class="colors" id="purple"></section>
+                    <section class="colors" id="brown"></section>
                     <section class="colors" id="grey"></section>
                     <section class="colors" id="blue"></section>                    
             </div>
