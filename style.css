@@ -6,20 +6,19 @@
 
 :root {
     --color-fill: #4aaf6c;
-    --color-fill: #4d4666;
     --color-fill: #ad334e;
     --color-fill: #9b7611;
     --color-fill: #f0b863;
     --color-fill: #7a7a7a;
+    --color-fill: #4d4666;
 }
 
 body {
-    background-color: white;
     background-color: var(--color-fill);
     overflow: hidden;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 ::-webkit-scrollbar {
@@ -54,7 +53,7 @@ body {
 
 .clock-container {
     position: relative;
-    margin: 35% auto;
+    margin: 150px auto;
     display: flex;
     justify-content: center;
 }
@@ -177,6 +176,7 @@ body {
 .choose-color {
     align-self: center;
     padding: 15px 35px;
+    margin-top: -30px;
     background: white;
     color: var(--color-fill);
     border: none;
@@ -191,11 +191,6 @@ body {
     cursor: pointer;
     outline: none;
     -webkit-tap-highlight-color: transparent;
-    transition: 0.2s ease;
-    -webkit-transition: 0.2s ease;
-    -moz-transition: 0.2s ease;
-    -ms-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
 }
 
 .choose-color:hover {
