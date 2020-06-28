@@ -255,32 +255,32 @@ body {
 }
 
 .colors:nth-child(1) {
-    background-color: #32d656;
-    border: 3px solid #32d656;
+    background-color: #98c5a7;
+    border: 3px solid #98c5a7;
 }
 .colors:nth-child(2) {
-    background-color: #e89446;
-    border: 3px solid #e89446;
+    background-color: #f0b863;
+    border: 3px solid #f0b863;
     margin-left: 10px;
 }
 .colors:nth-child(3) {
-    background-color: #ca5386;
-    border: 3px solid #ca5386;
+    background-color: #ff8686;
+    border: 3px solid #ff8686;
     margin-left: 10px;
 }
 .colors:nth-child(4) {
-    background-color: #ce8b53;
-    border: 3px solid #ce8b53;
+    background-color: #ffc31f;
+    border: 3px solid #ffc31f;
     margin-left: 10px;
 }
 .colors:nth-child(5) {
-    background-color: #c0bdbd;
-    border: 3px solid #c0bdbd;
+    background-color: #929292;
+    border: 3px solid #929292;
     margin-left: 10px;
 }
 .colors:nth-child(6) {
-    background-color: #4d4666;
-    border: 3px solid #4d4666;
+    background-color: #80b7ff;
+    border: 3px solid #80b7ff;
     margin-left: 10px;
 }
 
