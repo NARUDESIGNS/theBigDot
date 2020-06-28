@@ -5,17 +5,19 @@
 }
 
 :root {
-    --color-fill: #4aaf6c;
     --color-fill: #ad334e;
     --color-fill: #9b7611;
-    --color-fill: #7a7a7a;
     --color-fill: #4d4666;
     --color-fill: #f0b863;
+    --color-fill: #7a7a7a;
+    --color-fill: #98c5a7;
 }
 
 body {
-    background-color: var(--color-fill);
     overflow: hidden;
+    height: 100%;
+    background: linear-gradient(100deg, white, rgba(128, 128, 128, 0.138));
+    background-size: cover;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -33,9 +35,9 @@ body {
 }
 
 .clock {
-    width: 23rem;
-    height: 23rem;
-    background: linear-gradient(180deg, rgb(255, 255, 255) 40%, rgba(202, 202, 202, 0.1));
+    width: 20rem;
+    height: 20rem;
+    background: white;
     /* opacity: 0.9; */
     text-align: center;
     border-radius: 50%;
@@ -46,8 +48,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    box-shadow:  0px 10px 20px var(--color-fill),
-                inset 0px -3px 1px rgb(247, 246, 246, 0.8);
+    box-shadow: 0px 0px 50px rgba(197, 197, 197, 0.4);
     z-index: 1;
 }
 
@@ -64,12 +65,13 @@ body {
     border-radius: 50%;
     align-self: center;
     position: absolute;
-    background: rgb(238, 237, 237);
+    background: white;
+    border: 10px solid rgb(231, 231, 231, 0.2);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 0px 3px 4px rgba(255, 255, 255), inset 0 -0px 50px var(--color-fill);
+    /* box-shadow: 0 15px 100px rgba(121, 121, 121, 0.1) */
 }
 
 .hour {
@@ -177,8 +179,8 @@ body {
     align-self: center;
     padding: 15px 35px;
     margin-top: -30px;
-    background: white;
-    color: var(--color-fill);
+    color: white;
+    background: var(--color-fill);
     border: none;
     font-size: 15px;
     font-weight: 500;
@@ -193,11 +195,11 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.choose-color:hover {
+/* .choose-color:hover {
     color: white;
     background-color: var(--color-fill);
     border: 2px solid white;
-}
+} */
 
 /* select color panel */
 .pick-color {
