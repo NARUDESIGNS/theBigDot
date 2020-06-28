@@ -5,12 +5,12 @@
 }
 
 :root {
-    --color-fill: #ad334e;
-    --color-fill: #9b7611;
-    --color-fill: #4d4666;
     --color-fill: #f0b863;
-    --color-fill: #7a7a7a;
     --color-fill: #98c5a7;
+    --color-fill: #929292;
+    --color-fill: #ffc31f;
+    --color-fill: #ff8686;
+    --color-fill: #80b7ff;
 }
 
 body {

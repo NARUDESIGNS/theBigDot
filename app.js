@@ -49,12 +49,12 @@ chooseColor.addEventListener('click', () => {
 //colors
 for(let color of colors){
     color.addEventListener('click', () => {
-        if(color.id == 'green') document.documentElement.style.setProperty('--color-fill', '#4aaf6c');
+        if(color.id == 'green') document.documentElement.style.setProperty('--color-fill', '#98c5a7');
         if(color.id == 'orange') document.documentElement.style.setProperty('--color-fill', '#f0b863');
-        if(color.id == 'pink') document.documentElement.style.setProperty('--color-fill', '#ad334e');
-        if(color.id == 'brown') document.documentElement.style.setProperty('--color-fill', '#9b7611');
-        if(color.id == 'grey') document.documentElement.style.setProperty('--color-fill', '#7a7a7a');
-        if(color.id == 'blue') document.documentElement.style.setProperty('--color-fill', '#4d4666');
+        if(color.id == 'pink') document.documentElement.style.setProperty('--color-fill', '#ca8b98');
+        if(color.id == 'brown') document.documentElement.style.setProperty('--color-fill', '#ffc31f');
+        if(color.id == 'grey') document.documentElement.style.setProperty('--color-fill', '#929292');
+        if(color.id == 'blue') document.documentElement.style.setProperty('--color-fill', '#80b7ff');
         dim.style.display = "none";
         pickColor.style.display = "none";
     })
