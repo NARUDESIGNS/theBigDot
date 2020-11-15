@@ -52,9 +52,9 @@ for(let color of colors){
         if(color.id == 'green') document.documentElement.style.setProperty('--color-fill', '#98c5a7');
         if(color.id == 'orange') document.documentElement.style.setProperty('--color-fill', '#f0b863');
         if(color.id == 'pink') document.documentElement.style.setProperty('--color-fill', '#ca8b98');
-        if(color.id == 'brown') document.documentElement.style.setProperty('--color-fill', '#ffc31f');
+        if(color.id == 'brown') document.documentElement.style.setProperty('--color-fill', '#a0886c');
         if(color.id == 'grey') document.documentElement.style.setProperty('--color-fill', '#929292');
-        if(color.id == 'blue') document.documentElement.style.setProperty('--color-fill', '#80b7ff');
+        if(color.id == 'blue') document.documentElement.style.setProperty('--color-fill', '#8364ac');
         dim.style.display = "none";
         pickColor.style.display = "none";
     })
