@@ -18,7 +18,7 @@ body {
     height: 100%;
     background: linear-gradient(100deg, white, rgba(128, 128, 128, 0.138));
     background-size: cover;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -79,7 +79,7 @@ body {
     color: var(--color-fill);
     margin: auto 0;
     /* border: 1px solid orange; */
-    font-size: 75px;
+    font-size: 120px;
     font-weight: 500;
     transition: ease 1s;
     -webkit-transition: ease 1s;
@@ -131,6 +131,7 @@ body {
 .minute p {
     color: var(--color-fill);
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
     font-weight: 400;
 }
