@@ -18,8 +18,7 @@
     --light-bg: rgb(248, 248, 248);
     --light-bg-fill: rgb(240, 240, 240);
     --dark-bg: rgb(29, 29, 29);
-    /* --dark-bg-fill: rgb(34, 34, 34); */
-    --dark-bg-fill: rgb(97, 97, 97);
+    --dark-bg-fill: rgb(34, 34, 34);
     --dark-bg: rgb(0, 0, 0);
     --dark-bg-fill: rgb(27, 27, 27);
 }
