@@ -92,8 +92,8 @@ themeBtn.addEventListener('click', ()=> {
         chooseColor.style.color = 'var(--dark-bg)';
 
         //turn off frame shadow | modify clock shadow
-        clockFrame.style.boxShadow = 'none';
-        clock.style.boxShadow = '0 0 60px rgba(204, 204, 204, 0.5)';
+        clockFrame.style.border = 'none';
+        clock.style.boxShadow = '0 0 60px var(--text-color)';
 
         lightMode = !lightMode;
     }
