@@ -93,6 +93,7 @@ themeBtn.addEventListener('click', ()=> {
 
         //turn off frame shadow | modify clock shadow
         clockFrame.style.border = 'none';
+        clockFrame.style.boxShadow = 'none';
         clock.style.boxShadow = '0 0 60px var(--text-color)';
 
         lightMode = !lightMode;
@@ -113,6 +114,8 @@ themeBtn.addEventListener('click', ()=> {
         dateContainer.style.backgroundColor = 'var(--light-bg-fill)';
         chooseColor.style.color = 'white';
 
+        clockFrame.style.border = '10px solid rgb(231, 231, 231, 0.2)';
+        clockFrame.style.boxShadow = '0 0 20px 20px rgba(231, 231, 231, 0.1)';
         clock.style.boxShadow = '0 0 60px rgba(204, 204, 204, 0.8)';
 
         lightMode = !lightMode;
