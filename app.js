@@ -91,6 +91,10 @@ themeBtn.addEventListener('click', ()=> {
         dateContainer.style.backgroundColor = 'var(--dark-bg-fill)';
         chooseColor.style.color = 'var(--dark-bg)';
 
+        //turn off frame shadow | modify clock shadow
+        clockFrame.style.boxShadow = 'none';
+        clock.style.boxShadow = '0 0 60px rgba(204, 204, 204, 0.5)';
+
         lightMode = !lightMode;
     }
     else {
@@ -108,6 +112,8 @@ themeBtn.addEventListener('click', ()=> {
         secondIndicator.style.borderColor = 'white';
         dateContainer.style.backgroundColor = 'var(--light-bg-fill)';
         chooseColor.style.color = 'white';
+
+        clock.style.boxShadow = '0 0 60px rgba(204, 204, 204, 0.8)';
 
         lightMode = !lightMode;
     }

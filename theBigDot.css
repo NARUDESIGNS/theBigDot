@@ -16,9 +16,11 @@
     --text-color: #8364ac;
 
     --light-bg: rgb(248, 248, 248);
-    --dark-bg: rgb(19, 19, 19);
     --light-bg-fill: rgb(240, 240, 240);
+    --dark-bg: rgb(19, 19, 19);
     --dark-bg-fill: rgb(34, 34, 34);
+    --dark-bg: rgb(0, 0, 0);
+    --dark-bg-fill: rgb(27, 27, 27);
 }
 
 .hidden {
@@ -42,17 +44,16 @@ body {
 }
 
 .overall-container {
-    /* for some reason i dont know, positioning this relatively prevents the white space at the bottom when the screen is dimmed (when choose color btn is clicked) */
-    position: relative; 
+    /*forsomereasonidontknow,positioningthisrelativelypreventsthewhitespaceatthebottomwhenthescreenisdimmed(whenchoosecolorbtnisclicked)*/position: relative;
     min-width: 100vw;
     min-height: 100vh;
     width: 100%;
     height: auto;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 
 .nav {
@@ -68,11 +69,11 @@ body {
     color: var(--light-logo);
     font-family: sans-serif;
     font-weight: bold;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 .nav__mode {
     height: 50px;
@@ -87,11 +88,11 @@ body {
     -moz-border-radius: 19px;
     -ms-border-radius: 19px;
     -o-border-radius: 19px;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 
 .clock-frame {
@@ -109,11 +110,11 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
     box-shadow: 0 0 20px 20px rgba(231, 231, 231, 0.1);
 }
 
@@ -125,17 +126,17 @@ body {
     justify-content: center;
     align-items: center;
     background: white;
-    box-shadow: 0 0 60px rgba(204, 204, 204, 0.4);
+    box-shadow: 0 0 60px rgba(204, 204, 204, 0.8);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 .clock__hour {
     font-size: 4rem;
@@ -151,7 +152,8 @@ body {
     -moz-transition: linear 0.6s;
     -ms-transition: linear 0.6s;
     -o-transition: linear 0.6s;
-    /* border: 3px dotted rgb(255, 205, 205); */
+    /*border: 3px dotted rgb(255, 205, 205);
+    */:;
 }
 .minute-container {
     position: relative;
@@ -167,20 +169,20 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: linear 0.6s;
+    transition: linear 0.3s;
     -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 .minute {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 
 .second-container {
@@ -200,11 +202,11 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 
 .date-container {
@@ -218,11 +220,11 @@ body {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    transition: linear 0.6s;
-    -webkit-transition: linear 0.6s;
-    -moz-transition: linear 0.6s;
-    -ms-transition: linear 0.6s;
-    -o-transition: linear 0.6s;
+    transition: linear 0.3s;
+    -webkit-transition: linear 0.3s;
+    -moz-transition: linear 0.3s;
+    -ms-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
 }
 .date {
     color: var(--text-color);
