@@ -376,6 +376,9 @@ body {
 
 /* Touches for smaller screen sizes */
 @media only screen and (max-width: 500px){
+    body {
+        --dark-bg-fill: rgb(10, 10, 10);
+    }
     .pick-color {
         width: 320px;
     }
